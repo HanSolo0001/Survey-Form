@@ -20,13 +20,29 @@
             <input type="email" id="email" name="email" placeholder="Email address" required><br>
             <label for="age">Age (optional):</label><br>
             <input type="number" id="age" name="age" placeholder="Age" min="10" max="105"><br>
-            <label for="interest">Are you familiar with the author?</label><br>
-            <select name="interest" id="dropdown" required>
+            <label for="familiar">Are you familiar with the author?</label><br>
+            <select name="familiar" id="dropdown" required>
                 <option value="Yes">Yes</option>
                 <option value="A Little">A Little</option>
                 <option value="Who Is This Author">Who Is This Author</option>
             </select><br>
-            <label for="" </form>
+            <p class="learn">Would you like to learn more about the author?</p><br>
+            <div id="learn">
+                <input class="radio" type="radio" id="yes" name="learn" value="yes">
+                <label for="yes">Yes</label><br>
+                <input class="radio" type="radio" id="no" name="learn" value="no">
+                <label for="no">No</label><br>
+                <input class="radio" type="radio" id="maybe" name="learn" value="maybe">
+                <label for="maybe">Maybe</label><br>
+            </div>
+            <p class="interest">What story genres are you interested in (check all that apply)?</p>
+            <input class="checkbox" type="checkbox" id="mystery" name="mystery" value="mystery">
+            <label for="mystery"> Mystery</label><br>
+            <input class="checkbox" type="checkbox" id="romance" name="romance" value="romance">
+            <label for="romance"> Romance</label><br>
+            <input class="checkbox" type="checkbox" id="children" name="children" value="children">
+            <label for="children"> Children</label><br>
+        </form>
     </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
