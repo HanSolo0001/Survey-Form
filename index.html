@@ -5,11 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LPSTORIES Survey Form</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-
+    <div class="container">
+        <h1 id="title">LPSTORIES Survey Form</h1>
+        <p id="description">Thank you for completing this short survey.</p>
+        <form id="survey-form">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Full Name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Email address" required><br>
+            <label for="age">Age (optional):</label><br>
+            <input type="number" id="age" name="age" placeholder="Age" min="10" max="105"><br>
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
