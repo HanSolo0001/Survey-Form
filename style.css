@@ -5,7 +5,11 @@
 }
 
 body {
-    background-color: #a6c1ee;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-repeat: repeat-y;
+    font-size: 1.125rem;
+    min-height: 100vh;
 }
 
 .flex-container {
@@ -18,4 +22,132 @@ body {
     max-width: 1100px;
     margin: 0 auto;
     text-align: center;
+}
+
+#survey-form {
+    margin-bottom: 5em;
+}
+
+.input {
+    margin-bottom: 1em;
+}
+
+#description {
+    font-size: 1.3rem;
+}
+
+.learn {
+    margin-bottom: 0;
+}
+
+#learn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1.7em;
+}
+
+#radio-input--maybe {
+    margin-left: 1.2em;
+}
+
+#interest {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#romance {
+    margin-left: 1em;
+}
+
+.checkbox:hover,
+.radio {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.checkbox-container--children {
+    margin-left: .25em;
+}
+
+.input,
+#comments,
+#dropdown {
+    margin-top: .50em;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    width: 50%;
+    max-width: 500px;
+}
+
+.input:hover,
+.input:focus,
+#comments:hover,
+#comments:focus,
+#dropdown:hover,
+#dropdown:focus {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.input::placeholder,
+#dropdown {
+    padding-left: .25em;
+}
+
+#comments {
+    margin: 1em 0 2em 0;
+}
+
+#comments::placeholder {
+    padding-left: 1em;
+}
+
+#submit {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #FFCC70;
+    background-color: #C850C0;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+#submit:hover,
+#submit:focus {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer__link {
+    color: #FFCC70;
+    text-decoration: none;
+}
+
+.footer__link:hover,
+.footer__link:focus {
+    opacity: 0.7;
+}
+
+@media (min-width: 700px) {
+    body {
+        font-size: 1.25rem;
+    }
+    #submit {
+        padding: 1em 5em;
+    }
 }

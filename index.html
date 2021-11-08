@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LPSTORIES Survey Form</title>
+    <title>Author Book Survey Form</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -16,11 +16,11 @@
             <p id="description">Thank you for completing this short survey.</p>
             <form id="survey-form">
                 <label for="name" id="name-label">Name:</label><br>
-                <input type="text" id="name" name="name" placeholder="Full Name" required><br>
+                <input class="input" type="text" id="name" name="name" placeholder="Full Name" required><br>
                 <label for="email" id="email-label">Email:</label><br>
-                <input type="email" id="email" name="email" placeholder="Email address" required><br>
+                <input class="input" type="email" id="email" name="email" placeholder="Email address" required><br>
                 <label for="age" id="number-label">Age (optional):</label><br>
-                <input type="number" id="number" name="age" placeholder="Age" min="10" max="105"><br>
+                <input class="input" type="number" id="number" name="age" placeholder="Age" min="10" max="105"><br>
                 <label for="familiar">Are you familiar with the author?</label><br>
                 <select name="familiar" id="dropdown" required>
                     <option value="Yes">Yes</option>
@@ -29,29 +29,41 @@
                 </select><br>
                 <p class="learn">Would you like to learn more about the author?</p><br>
                 <div id="learn">
-                    <input class="radio" type="radio" id="yes" name="learn" value="yes">
-                    <label for="yes">Yes</label><br>
-                    <input class="radio" type="radio" id="no" name="learn" value="no">
-                    <label for="no">No</label><br>
-                    <input class="radio" type="radio" id="maybe" name="learn" value="maybe">
-                    <label for="maybe">Maybe</label><br>
+                    <div class="radio-input">
+                        <input class="radio" type="radio" id="yes" name="learn" value="yes">
+                        <label for="yes">Yes</label>
+                    </div><br>
+                    <div class="radio-input">
+                        <input class="radio" type="radio" id="no" name="learn" value="no">
+                        <label for="no">No</label>
+                    </div><br>
+                    <div class="radio-input" id="radio-input--maybe">
+                        <input class="radio" type="radio" id="maybe" name="learn" value="maybe">
+                        <label for="maybe">Maybe</label>
+                    </div><br>
                 </div>
                 <p class="interest">What story genres are you interested in (check all that apply)?</p>
                 <div id="interest">
-                    <input class="checkbox" type="checkbox" id="mystery" name="mystery" value="mystery">
-                    <label for="mystery"> Mystery</label><br>
-                    <input class="checkbox" type="checkbox" id="romance" name="romance" value="romance">
-                    <label for="romance"> Romance</label><br>
-                    <input class="checkbox" type="checkbox" id="children" name="children" value="children">
-                    <label for="children"> Children</label><br>
+                    <div class="checkbox-container">
+                        <input class="checkbox" type="checkbox" id="mystery" name="mystery" value="mystery">
+                        <label for="mystery"> Mystery</label>
+                    </div><br>
+                    <div class="checkbox-container">
+                        <input class="checkbox" type="checkbox" id="romance" name="romance" value="romance">
+                        <label for="romance"> Romance</label>
+                    </div><br>
+                    <div class="checkbox-container checkbox-container--children">
+                        <input class="checkbox" type="checkbox" id="children" name="children" value="children">
+                        <label for="children"> Children</label>
+                    </div><br>
                 </div><br>
                 <label for="comments">Any other comments?</label><br>
-                <textarea id="comments" name="comments" placeholder="Leave comments, suggestions, or questions here" rows="4" cols="30"></textarea><br>
+                <textarea id="comments" name="comments" placeholder="Leave comments, suggestions, or questions here" rows="4" cols="50"></textarea><br>
                 <input type="submit" value="Submit" id="submit">
             </form>
         </div>
         <footer class="footer">
-            &copy 2021 <a href="javascript:;">Daniel Hildreth</a>
+            &copy 2021 <a class="footer__link" href="javascript:;">Daniel Hildreth</a>
         </footer>
     </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
